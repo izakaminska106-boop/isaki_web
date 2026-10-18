@@ -12,6 +12,8 @@ for (const width of [390, 768, 1440]) {
     await page.evaluate(() => document.fonts.ready);
     await expect(page.locator('h1')).toHaveText('Intelligencemeets strategy.');
     await expect(page.locator('main section')).toHaveCount(6);
+    await expect(page.locator('img[src="./isakilogotyp.jpg"]')).toHaveCount(3);
+    expect(await page.locator('.hero-logo').evaluate(img => img.complete && img.naturalWidth === 1254 && Math.abs(img.clientWidth - img.clientHeight) <= 1)).toBe(true);
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
     if (width < 761) {
       await page.getByRole('button', { name: 'Menu' }).click();

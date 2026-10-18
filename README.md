@@ -15,11 +15,12 @@ python3 -m http.server 8000 --bind 0.0.0.0
 2. Wyślij pliki na gałąź `main`. Workflow `Deploy GitHub Pages` opublikuje wyłącznie pliki strony i zasoby.
 3. Sprawdź zakończenie workflow w zakładce Actions. Adres publikacji poda krok Deploy.
 
-Względne ścieżki obsługują zarówno adres projektu `/isaki_web/`, jak i późniejszą domenę własną. Domena isaki.pl nie jest jeszcze konfigurowana. Nie dodawaj pliku CNAME przed przygotowaniem DNS.
+Względne ścieżki obsługują zarówno adres projektu `/isaki_web/`, jak i późniejszą domenę własną. Właścicielka dodała plik CNAME dla isaki.pl. Workflow zachowuje go w publikowanym artefakcie. Działanie domeny wymaga poprawnych DNS oraz konfiguracji Pages.
 
 ## Do uzupełnienia przed premierą firmową
 
-- Oryginalne logo zatwierdzone przez właścicielkę. Obecna nazwa firmy w tekście jest oznaczeniem roboczym, nie odtworzonym logotypem. Dekoracja geometryczna w hero nie jest znakiem marki.
+Oryginalny logotyp właścicielki (`isakilogotyp.jpg`) jest używany bez modyfikacji w nagłówku, hero i stopce.
+
 - Zatwierdzony e-mail kontaktowy i aktywny link `mailto:` w sekcji Contact.
 - Pełna nazwa firmy, adres, NIP i odpowiednia informacja o przetwarzaniu danych.
 - Favicon z zatwierdzonego sygnetu. Nie generujemy zamiennika logo.
